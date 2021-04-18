@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ body {
+  height: 100vh;
+ }
+ 
+.table {
+  background-color: hsl(233, 47%, 7%);
+  position: relative;
+}
+
+div.card-container {
+  width: 320px;
+  font-size: 15px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: column;
+}
+
+div.main-header img {
+  width: 320px;
+  height: 236px;
+  mix-blend-mode: darken;
+  opacity: .4;
+}
+
+div.main-header {
+  background-color: hsl(277, 64%, 61%);
+  width: 320px;
+  height: 236px;
+  border-radius: 15px 15px 0 0;
+}
+
+div.text {
+  margin: 40px 15px 15px;
+}
+
+h1 {
+  font-family: Inter-Bold;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+p {
+  font-family: LexendDeca;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+span.accent {
+  color: hsl(277, 64%, 61%);
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats-container div {
+  text-align: center;
+  margin: 15px;
+}
+
+.stats-container h2 {
+  font-family: Inter-Bold;
+  color: hsl(0, 0%, 100%);
+  margin: 5px;
+}
+
+.stats-container span {
+  font-family: LexendDeca;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+@font-face {
+  font-family: LexendDeca;
+  src: url(fonts/LexendDeca-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url(fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(fonts/Inter-Bold.ttf);
+}
+
+@media all and (min-width: 465px){
+  body {
+    display: table;
+  }
+  
+  .table {
+    max-width: 1299px;
+    max-height: 740px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  div.card-container {
+    flex-direction: row-reverse;
+    width: 1002px;
+    height: 369px;
+    margin: auto;
+    border-radius: 15px;
+  }
+  
+  div.main-header {
+    width: 501px;
+    height: 369px;
+    border-radius: 0 15px 15px 0;
+  }
+
+  div.main-header img {
+    width: 501px;
+    height: 369px;
+  }
+  
+  div.text {
+    width: 501px;
+    height: 369px;
+    margin: 70px;
+  }
+  
+  h1, p {
+    text-align: left;
+  }
+  
+  div.stats-container {
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+  
+  .stats-container span, h2 {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .stats-container div {
+    margin: 0;
+  }
+}
